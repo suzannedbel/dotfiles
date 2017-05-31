@@ -4,6 +4,11 @@
     - darwin
     - common
 
+- hosts: debian
+  roles:
+    - debian
+    - common
+
 - hosts: ubuntu
   roles:
     - ubuntu

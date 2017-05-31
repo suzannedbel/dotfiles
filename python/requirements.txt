@@ -10,4 +10,3 @@ setuptools
 soundscrape
 virtualenv
 wheel
-xattr

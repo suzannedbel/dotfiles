@@ -74,11 +74,13 @@
   pip:
     requirements: "{{ dotfiles }}/python/requirements2.txt"
     executable: pip2
+  become: true
 
 - name: Python 3 packages
   pip:
     requirements: "{{ dotfiles }}/python/requirements.txt"
     executable: pip3
+  become: true
 
 - name: Git configuration
   command: git config --global {{ item.key }} {{ item.value }}
